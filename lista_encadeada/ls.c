@@ -13,12 +13,12 @@ LS *ls_cria() {
 }
 
 /**
- *  Função para inserção de elementos da lista
+ *  Função para inserção de elementos na lista
  *
- *  @params int | LS **
+ *  @params LS ** | int
  *  @return void
 */
-void ls_insere(int valor, LS **lista) {
+void ls_insere(LS **lista, int valor) {
 	LS *no = (LS *) malloc(sizeof(LS));
 
 	no->valor = valor;
@@ -30,10 +30,10 @@ void ls_insere(int valor, LS **lista) {
 /**
  *  Função para remoção de elementos da lista
  *
- *  @params int | LS **
+ *  @params LS ** | int
  *  @return void
 */
-void ls_remove(int valor, LS **lista) {
+void ls_remove(LS **lista, int valor) {
 	// Declara as variaveis -
 	// LS *aux recebe o valor do ponteiro de ponteiro (O Endereco inicial da lista)
 	LS *aux = *lista;

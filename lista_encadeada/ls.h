@@ -20,18 +20,18 @@ LS *ls_cria();
 /**
  *  Função para inserção de elementos da lista
  *
- *  @params int | LS **
+ *  @params LS ** | int
  *  @return void
 */
-void ls_insere(int, LS **);
+void ls_insere(LS **, int);
 
 /**
  *  Função para remoção de elementos da lista
  *
- *  @params int | LS **
+ *  @params LS ** | int
  *  @return void
 */
-void ls_remove(int, LS **);
+void ls_remove(LS **, int);
 
 /**
  *  Função para verificar se uma lista é vazia
