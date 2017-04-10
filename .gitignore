@@ -1,0 +1,8 @@
+# impedindo de subir o diretorio PP
+PP/**
+
+# impedindo de subir os arquivos '.o'
+*.o
+
+# impedindo de subir os arquivos compilados
+lista_encadeada/lista
